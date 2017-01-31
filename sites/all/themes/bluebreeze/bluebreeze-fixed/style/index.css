@@ -1,0 +1,54 @@
+/**
+* bluebreeze-fixed
+* ----------------
+*
+* fixed width version of the bluebreeze theme
+*
+* created by Franz Heinzmann (frando)
+*
+* licensed under the GPL
+*/
+
+
+@import "../../style/index.css";
+
+/* layout */
+
+
+#page {
+  width: 460px
+}
+
+#page.one-sidebar {
+  width: 755px;
+}
+
+
+
+/* basic styles */
+
+
+
+body, #page, #front, #second {
+}
+
+/* primary & secondary links */
+
+/* re-positioning the primary and secondary links, as the absolute positioning 
+   used in the bluebreeze theme won't work here */
+
+
+/* sidebars */
+
+
+
+/* more styles */
+
+#search {
+  margin-top: 15px;
+} 
+
+#search input.form-text {
+  width: 60px;
+}
+

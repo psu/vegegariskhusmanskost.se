@@ -1,0 +1,155 @@
+/**
+* Implentation of the "One True Layout" by positioneverything.net
+* see http://www.positioniseverything.net/articles/onetruelayout/
+* and http://www.positioniseverything.net/articles/onetruelayout/appendix/holygrail
+* for details
+*/
+
+#main-wrapper {
+  float: left;
+  width: 100%;
+}
+
+#main	{
+  margin: 0;
+}
+
+#page {
+  width: 100%;
+}
+
+#menu {
+  z-index: 55;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#page.one-sidebar {
+  width: 100%;
+}
+
+#page.two-sidebars {
+  width: 900px;
+}
+
+.withleftwithright #main {
+  margin-right: 400px;
+}
+.withleftwithright #sidebar-right {
+  margin-right: 195px;
+}
+
+.withleft #main {
+  margin-right: 195px;
+}
+
+.withright #main {
+  margin-right: 255px;
+}
+
+
+#header #logo {
+/*
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 5em;
+*/
+  z-index: 999;
+  float: left;
+}
+
+#header #site-name {
+/*
+  position: relative;
+  top: 0;
+  left: 200px;
+*/
+  width: 400px;
+  float: left;
+}
+
+#primary {
+  position: relative;
+  top: 0;
+  left: 0;
+  
+}
+
+#secondary {
+  position: relative;
+  top: -2.9em;
+  left: 23em; /*360px*/
+  width: 40em;
+}
+
+
+/*
+#header #logo {
+  float: left;
+}
+
+#header #site-name {
+  float: left;
+  width: 15em;
+}
+
+#primary {
+  float: left;
+  width: 360px;
+}
+
+#secondary {
+  float: left;
+  width: 550px;
+
+}
+*/
+
+
+.withright #sidebar-right {
+  margin-right: 0px;
+}
+
+#sidebar-left, #sidebar-right {
+  padding: 0;
+  overflow: hidden;
+
+}
+
+#sidebar-left	{
+  float: right;
+  margin-left: -100%;
+  width: 185px; /* 195 - 10 */)
+  padding: 1em 0;
+  padding-left: 10px;
+}
+
+#sidebar-right	{
+  float: right;
+  margin-left: -100%;
+  width: 225px; /* 255 - 30 */
+  padding: 0;
+  padding-left: 30px;
+}
+
+#sidebar-right {
+  .margin-left: -255px; /* IE7 Fix */
+}
+
+* html #sidebar-right {
+  margin-left: -255px; /* IE6 Fix*/
+}
+
+#sidebar-left {
+  .margin-left: -195px; /* IE7 Fix */
+}
+
+* html #sidebar-left {
+  margin-left: -195px; /* IE6 Fix*/
+}
+
+#footer	{
+  clear: both;
+}
